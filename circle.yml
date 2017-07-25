@@ -1,0 +1,17 @@
+---
+machine:
+  php:
+    version: 7.1.0
+  environment:
+    TEST_DIR: test
+dependencies:
+  override:
+    - composer validate
+    - composer clearcache
+    - composer install
+test:
+  override:
+    - mkdir -p $TEST_DIR
+    - cd $TEST_DIR && composer init -n
+    - cd $TEST_DIR && composer config minimum-stability dev
+    - cd $TEST_DIR && composer require thom8/drupalcli
