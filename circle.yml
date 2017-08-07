@@ -12,6 +12,4 @@ dependencies:
 test:
   override:
     - mkdir -p $TEST_DIR
-    - cd $TEST_DIR && composer init -n
-    - cd $TEST_DIR && composer config minimum-stability dev
     - cd $TEST_DIR && composer require thom8/drupalcli

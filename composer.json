@@ -9,9 +9,8 @@
             "email": "thomtoogood@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "drush/drush": "^8.1",
-        "drupal/console": "~1.0"
+        "drupal/console": "^1.0"
     }
 }
